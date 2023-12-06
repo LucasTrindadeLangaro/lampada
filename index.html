@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lampada</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vanila JS</h1>
+    </header>
+    <main>
+        <div class="lampada">
+            <img id='lampada' src="./src/image/desligada.jpg" alt="lampada desligada" onclick="quebra()">
+        </div>
+
+        <div class="botao">
+            <input id='liga' type="button" value="Liga" onclick="liga()">
+            <input id='desliga' type="button" value="Desliga" onclick="desliga()">
+        </div>
+    </main>
+    <script>
+        var img = document.getElementById('lampada')
+        function liga() {
+            var liga = document.getElementById('liga')
+            img.src = './src/image/ligada.jpg'
+        }
+
+        function desliga() {
+            var desliga = document.getElementById('desliga')
+            img.src = './src/image/desligada.jpg'
+        }
+
+        function quebra() {
+            var quebra = document.getElementById('quebra')
+            img.src = './src/image/quebrada.jpg'
+        }
+    </script>
+</body>
+
+</html>
