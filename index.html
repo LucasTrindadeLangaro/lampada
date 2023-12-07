@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Lampada</title>
 </head>
 
@@ -15,29 +16,34 @@
     </header>
     <main>
         <div class="lampada">
-            <img id='lampada' src="./src/image/desligada.jpg" alt="lampada desligada" onclick="quebra()">
+            <img id='lampada' src="./src/image/desligada.png" alt="lampada desligada" onclick="quebra()">
         </div>
-
         <div class="botao">
             <input id='liga' type="button" value="Liga" onclick="liga()">
             <input id='desliga' type="button" value="Desliga" onclick="desliga()">
         </div>
     </main>
+
+    <footer>
+        <a href="http://github.com/LucasTrindadeLangaro" target="_blank">
+            <p> &copy; Lucas Trindade Langaro <i class="fas fa-external-link-alt"></i></p>
+        </a>
+    </footer>
     <script>
         var img = document.getElementById('lampada')
         function liga() {
             var liga = document.getElementById('liga')
-            img.src = './src/image/ligada.jpg'
+            img.src = './src/image/ligada.png'
         }
 
         function desliga() {
             var desliga = document.getElementById('desliga')
-            img.src = './src/image/desligada.jpg'
+            img.src = './src/image/desligada.png'
         }
 
         function quebra() {
             var quebra = document.getElementById('quebra')
-            img.src = './src/image/quebrada.jpg'
+            img.src = './src/image/quebrada.png'
         }
     </script>
 </body>
